@@ -51,4 +51,11 @@
     text-edge: cap;
     @apply text-skin-gray-500 text-center font-medium font-poppins lg:leading-[42px] text-[14px] md:text-[18px] xl:text-[26px] max-w-[90%] sm:max-w-[79%] mx-auto;
   }
+  span.newsletter {
+    background: linear-gradient(136deg, #f7138f 0%, #fba45a 100%);
+
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+  }
 }
