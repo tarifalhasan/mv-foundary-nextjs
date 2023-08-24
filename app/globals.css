@@ -1,0 +1,54 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --foreground-rgb: 0, 0, 0;
+  --background-start-rgb: 214, 219, 220;
+  --background-end-rgb: 255, 255, 255;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --foreground-rgb: 255, 255, 255;
+    --background-start-rgb: 0, 0, 0;
+    --background-end-rgb: 0, 0, 0;
+  }
+}
+
+@layer base {
+  body {
+    @apply bg-skin-bg text-white;
+  }
+}
+
+@layer components {
+  .btn {
+    @apply inline-flex outline-none focus:outline-none active:bg-opacity-90 items-center justify-center  gap-[10px] rounded-[10px] text-white font-bold  font-poppins;
+    padding: 14px 37px;
+  }
+  .primary-btn {
+    @apply border-[1px]  border-white bg-none;
+  }
+  .secondary-btn {
+    border-radius: 8px;
+    @apply bg-btn-gradient-bg;
+    box-shadow: 0px 0px 28px 0px rgba(247, 19, 143, 0.7);
+  }
+  .hero_title {
+    leading-trim: both;
+    text-edge: cap;
+    @apply text-white font-bold font-poppins leading-normal text-[28px] md:text-[54px] xl:text-[85px] 2xl:text-[110px];
+  }
+  span.grow {
+    background: linear-gradient(72deg, #f7138f 0%, #f71e8b 0%, #fba45a 100%);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+  }
+  .hero_des {
+    leading-trim: both;
+    text-edge: cap;
+    @apply text-skin-gray-500 text-center font-medium font-poppins lg:leading-[42px] text-[14px] md:text-[18px] xl:text-[26px] max-w-[90%] sm:max-w-[79%] mx-auto;
+  }
+}
