@@ -7,6 +7,8 @@ export { default as aws } from "./aws-svgrepo-com 1.svg";
 export { default as figma } from "./figma-5 1.svg";
 export { default as footer_left_bubble } from "./footer_left_bubble.png";
 export { default as footer_right_bubble } from "./footer_right_bubble.png";
+export { default as grow_features_img } from "./grow_im.png";
+export { default as lanuch_features_img } from "./lanuch_fea_img.png";
 export { default as left_boble } from "./left_bubble.png";
 export { default as location } from "./location.png";
 export { default as mix_panel } from "./mixpanel 1.svg";
@@ -21,4 +23,8 @@ export { default as re_tools } from "./retool-logos-idpLYn9I4G 1.svg";
 export { default as right_boble } from "./right_bubble.png";
 export { default as svelte } from "./svelte-1 1.svg";
 export { default as uber } from "./uber.svg";
+export { default as validate_feature_img } from "./validate.png";
 export { default as w_logo } from "./w.svg";
+
+export { default as asets2 } from "./assets2.png";
+export { default as g6 } from "./g10.png";

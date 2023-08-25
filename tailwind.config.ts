@@ -16,6 +16,10 @@ const config: Config = {
         "pricing-card-gradient":
           "linear-gradient(0deg, rgba(0, 0, 0, 0.10) 0%, rgba(0, 0, 0, 0.10) 100%), linear-gradient(134deg, #F7138F 0%, #FBA45A 100%)",
         "text-gradient1": "linear-gradient(136deg, #F7138F 0%, #FBA45A 100%)",
+        "validator-gradient":
+          "linear-gradient(90deg, #0B80E4 0%, #0ACDD1 100%)",
+        "launch-gradient": "linear-gradient(90deg, #FF594A 0%, #F6B500 100%)",
+        "grow-gradient": "linear-gradient(90deg, #7D26C0 0%, #EB0582 100%)",
       },
       backgroundColor: {},
       colors: {
@@ -40,8 +44,11 @@ const config: Config = {
         poppins: "var(--font-poppins)",
       },
       fontSize: {
-        "t-15": "15px",
+        "t-12": "12px",
+        "t-13": "13px",
+        "t-14": "14px",
         "t-16": "16px",
+        "t-15": "15px",
         "t-17": "17px",
         "t-18": "18px",
         "t-21": "21px",

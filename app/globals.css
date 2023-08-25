@@ -63,13 +63,13 @@
   .title {
     leading-trim: both;
     text-edge: cap;
-    @apply font-poppins text-white font-bold text-center leading-normal not-italic text-[28px]  md:text-[45px];
+    @apply font-poppins text-white font-bold text-center leading-normal not-italic text-[23px]  md:text-[45px];
   }
   .sub-title {
     color: #a09fb0;
     leading-trim: both;
     text-edge: cap;
-    @apply text-[20px] text-center not-italic font-medium leading-normal;
+    @apply text-t-16 sm:text-[20px] text-center not-italic font-medium leading-normal;
   }
   .bg-clip-text {
     -webkit-background-clip: text;
