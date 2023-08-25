@@ -15,6 +15,7 @@ const config: Config = {
         "btn-gradient-bg": "linear-gradient(136deg, #f7138f 0%, #fba45a 100%)",
         "pricing-card-gradient":
           "linear-gradient(0deg, rgba(0, 0, 0, 0.10) 0%, rgba(0, 0, 0, 0.10) 100%), linear-gradient(134deg, #F7138F 0%, #FBA45A 100%)",
+        "text-gradient1": "linear-gradient(136deg, #F7138F 0%, #FBA45A 100%)",
       },
       backgroundColor: {},
       colors: {
@@ -28,6 +29,10 @@ const config: Config = {
           "pricing-card-p": "rgba(48, 44, 88, 0.51)",
           "royal-blue": "#6271FF",
           "tangerine-orange": "#FBA45A",
+          "start-up-card": "rgba(17, 17, 32, 0.29)",
+          "start-up-card-hover": "#231F43",
+          borderDarken: "#333247",
+          "gray-300": "#D1D1D1",
         },
       },
       fontFamily: {
@@ -49,6 +54,9 @@ const config: Config = {
         "btn-shadow": "0px 0px 28px 0px rgba(247, 19, 143, 0.7)",
         pricing_card: "10px 20px 120px -2px rgba(7, 51, 118, 0.06)",
         "btn-shadow1": "0px 4px 28px -7px rgba(0, 0, 0, 0.15)",
+      },
+      borderRadius: {
+        "radius-20": "20px",
       },
     },
   },

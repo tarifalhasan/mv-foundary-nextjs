@@ -52,7 +52,8 @@
     text-edge: cap;
     @apply text-skin-gray-500 text-center font-medium font-poppins lg:leading-[42px] text-[14px] md:text-[18px] xl:text-[26px] max-w-[90%] sm:max-w-[79%] mx-auto;
   }
-  span.newsletter {
+  span.newsletter,
+  .text-gradient {
     background: linear-gradient(136deg, #f7138f 0%, #fba45a 100%);
 
     background-clip: text;
@@ -69,5 +70,17 @@
     leading-trim: both;
     text-edge: cap;
     @apply text-[20px] text-center not-italic font-medium leading-normal;
+  }
+  .bg-clip-text {
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+  }
+  .news_card {
+    filter: drop-shadow(
+      10.303030014038086px 12.363636016845703px 61.818180084228516px
+        rgba(0, 0, 0, 0.1)
+    );
+    border-radius: 8.937px;
+    background: rgba(255, 255, 255, 0.05);
   }
 }

@@ -3,7 +3,7 @@ import { PrimaryPricingCard } from "./PricingCard";
 
 const Pricing = () => {
   return (
-    <section id="pricing" className="relative py-16 lg:py-24">
+    <section id="pricing" className="relative overflow-hidden py-16 lg:py-24">
       <Container className=" relative overflow-hidden z-40">
         <div>
           <h2 className="title">Pricing</h2>
