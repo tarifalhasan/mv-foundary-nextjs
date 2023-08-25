@@ -30,6 +30,7 @@
   .primary-btn {
     @apply border-[1px]  border-white bg-none;
   }
+
   .secondary-btn {
     border-radius: 8px;
     @apply bg-btn-gradient-bg;
@@ -57,5 +58,16 @@
     background-clip: text;
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
+  }
+  .title {
+    leading-trim: both;
+    text-edge: cap;
+    @apply font-poppins text-white font-bold text-center leading-normal not-italic text-[28px]  md:text-[45px];
+  }
+  .sub-title {
+    color: #a09fb0;
+    leading-trim: both;
+    text-edge: cap;
+    @apply text-[20px] text-center not-italic font-medium leading-normal;
   }
 }

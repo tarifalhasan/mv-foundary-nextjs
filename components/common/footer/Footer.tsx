@@ -7,7 +7,7 @@ import Logo from "../Logo";
 import Newslatter from "./Newslatter";
 const Footer = () => {
   return (
-    <footer className=" relative bg-skin-footer-bg">
+    <footer className=" overflow-hidden relative bg-skin-footer-bg">
       <Container className=" py-9">
         <div className=" flex  space-y-5 flex-col sm:flex-row sm:items-center sm:justify-between">
           <div className=" -space-y-2">
@@ -21,7 +21,7 @@ const Footer = () => {
           <Newslatter />
         </div>
         <hr className=" h-[1px] opacity-10 bg-white  my-16 w-full" />
-        <div className=" flex lg:items-start justify-between flex-wrap lg:flex-nowrap gap-5">
+        <div className=" pb-16 flex lg:items-start justify-between flex-wrap lg:flex-nowrap gap-5">
           <div className=" w-full basis-[30%]">
             <div>
               <Logo />
@@ -91,30 +91,32 @@ const Footer = () => {
                   HELP CENTER
                 </h3>
               </div>
-              <ul className=" pt-6">
-                <ul className=" pt-6 space-y-2">
-                  <li className=" text-t-16 font-normal text-[#C7C7C7] font-poppins">
-                    <Link href="/">HELP CENTER</Link>
-                  </li>
-                  <li className=" text-t-16 font-normal text-[#C7C7C7] font-poppins">
-                    <Link href="/">HELP CENTER</Link>
-                  </li>
-                  <li className=" text-t-16 font-normal text-[#C7C7C7] font-poppins">
-                    <Link href="/">TFAQ</Link>
-                  </li>
-                  <li className=" text-t-16 font-normal text-[#C7C7C7] font-poppins">
-                    <Link href="/">QUICK START GUIDE</Link>
-                  </li>
-                  <li className=" text-t-16 font-normal text-[#C7C7C7] font-poppins">
-                    <Link href="/">TUTORIALS</Link>
-                  </li>
-                </ul>
+
+              <ul className=" pt-6 space-y-2">
+                <li className=" text-t-16 font-normal text-[#C7C7C7] font-poppins">
+                  <Link href="/">HELP CENTER</Link>
+                </li>
+                <li className=" text-t-16 font-normal text-[#C7C7C7] font-poppins">
+                  <Link href="/">HELP CENTER</Link>
+                </li>
+                <li className=" text-t-16 font-normal text-[#C7C7C7] font-poppins">
+                  <Link href="/">TFAQ</Link>
+                </li>
+                <li className=" text-t-16 font-normal text-[#C7C7C7] font-poppins">
+                  <Link href="/">QUICK START GUIDE</Link>
+                </li>
+                <li className=" text-t-16 font-normal text-[#C7C7C7] font-poppins">
+                  <Link href="/">TUTORIALS</Link>
+                </li>
               </ul>
             </div>
           </div>
         </div>
       </Container>
-      <div className="bg-skin-bg py-2">
+
+      <div className=" absolute w-[366px] z-30 h-[366px] rounded-full bg-[#0085F5] blur-[245px]  opacity-20 -left-[8%] top-1/2"></div>
+      <div className=" absolute w-[409px] z-30 h-[409px] rounded-full bg-[#FBA45A] blur-[245px]  opacity-20 -right-[10%] -bottom-[10%]"></div>
+      <div className="bg-skin-bg relative z-40 py-2">
         <Container>
           <div className=" w-full   flex-col sm:flex-row gap-4 flex items-center justify-between">
             <p>© 2022 MVP Foundry . All rights reserved.</p>
