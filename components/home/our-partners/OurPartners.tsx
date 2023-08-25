@@ -1,11 +1,16 @@
 "use client";
 
-import { asana, fresh_work, github, out_race } from "@/assets/images";
+import {
+    airwallex,
+    asana,
+    fresh_work,
+    github,
+    out_race,
+} from "@/assets/images";
 import Container from "@/components/common/Container";
 import Image from "next/image";
 import { useEffect, useState } from "react";
 const OurPartners = () => {
-  const [count, setCount] = useState(0);
   const [activeIndex, setActiveIndex] = useState(0); // Track the active slider index
   useEffect(() => {
     const intervalId = setInterval(() => {
@@ -44,8 +49,14 @@ const OurPartners = () => {
       brand: out_race,
       id: 4,
     },
+    {
+      testiminal:
+        "Get 60 seats of GitHub Enterprise free for one year, 50% off in year 2 for GitHub Enterprise. (AWS, Google, Github, other with free startup credits.",
+      brand: airwallex,
+      id: 5,
+    },
   ];
-  console.log(count);
+
   return (
     <section className="py-16 bg-skin-secondary">
       <Container className="space-y-4">
@@ -56,11 +67,12 @@ const OurPartners = () => {
           {data.map((item, index) => (
             <div
               key={item.id}
-              className={`inline-flex relative rounded-lg items-center justify-center  h-[100px] px-5 ${
+              className={`inline-flex  cursor-pointer relative rounded-lg items-center justify-center  h-[100px] px-5 ${
                 activeIndex === index
                   ? " bg-no-repeat  relative z-20  btn_tes  "
                   : "bg-[#1C1934]"
               }`}
+              onClick={() => setActiveIndex(index)}
             >
               <Image
                 className=" relative z-40"
