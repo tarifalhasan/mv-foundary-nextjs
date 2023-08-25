@@ -20,6 +20,7 @@ const config: Config = {
           "linear-gradient(90deg, #0B80E4 0%, #0ACDD1 100%)",
         "launch-gradient": "linear-gradient(90deg, #FF594A 0%, #F6B500 100%)",
         "grow-gradient": "linear-gradient(90deg, #7D26C0 0%, #EB0582 100%)",
+        "active-slider-gradient-b": "url('/images/active_slider_button.png')",
       },
       backgroundColor: {},
       colors: {

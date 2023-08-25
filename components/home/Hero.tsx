@@ -4,7 +4,7 @@ import Container from "../common/Container";
 
 const Hero = () => {
   return (
-    <section className="relative  overflow-hidden    ">
+    <section id="home" className="relative  overflow-hidden    ">
       <Container className="text-center pt-20 sm:pt-28 lg:pt-40 pb-20 2xl:pb-28 ">
         <h1 className="hero_title">
           Validate.Launch.<span className="grow">Grow</span>

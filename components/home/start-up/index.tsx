@@ -6,7 +6,10 @@ import StratUpCard from "./StratUpCard";
 
 export default function StartUp() {
   return (
-    <section className=" relative  overflow-hidden py-16 lg:py-24">
+    <section
+      id="startups"
+      className=" relative  overflow-hidden py-16 lg:py-24"
+    >
       <Container className=" relative z-50">
         <div className="space-y-6 lg:space-y-12">
           <div className="space-y-1">

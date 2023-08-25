@@ -24,16 +24,16 @@
 
 @layer components {
   .btn {
-    @apply inline-flex outline-none focus:outline-none active:bg-opacity-90 items-center justify-center  gap-[10px] rounded-[10px] text-white font-bold  font-poppins;
+    @apply inline-flex transition-all duration-300 ease-in-out outline-none focus:outline-none active:bg-opacity-90 items-center justify-center  gap-[10px] rounded-[10px] text-white font-bold  font-poppins;
     padding: 14px 37px;
   }
   .primary-btn {
-    @apply border-[1px]  border-white bg-none;
+    @apply border-[1px]  hover:bg-btn-gradient-bg hover:border-transparent border-white bg-none;
   }
 
   .secondary-btn {
     border-radius: 8px;
-    @apply bg-btn-gradient-bg;
+    @apply bg-btn-gradient-bg hover:opacity-50;
     box-shadow: 0px 0px 28px 0px rgba(247, 19, 143, 0.7);
   }
   .hero_title {
@@ -83,4 +83,32 @@
     border-radius: 8.937px;
     background: rgba(255, 255, 255, 0.05);
   }
+  .active_slider {
+    background: #323053;
+  }
+  .btn_tes {
+    @apply bg-grow-gradient;
+  }
+  .btn_tes::before {
+    content: "";
+    position: absolute;
+    top: 1px;
+    right: 1px;
+    bottom: 1px;
+    border-radius: 8px;
+    left: 1px;
+    background: #323053;
+  }
+}
+
+.triangle {
+  margin: 0 5px;
+  vertical-align: middle;
+}
+.triangle-5 {
+  width: 60px;
+  height: 30px;
+  border-top: solid 30px #e6148b;
+  border-left: solid 30px transparent;
+  border-right: solid 30px transparent;
 }

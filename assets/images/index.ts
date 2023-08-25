@@ -26,5 +26,11 @@ export { default as uber } from "./uber.svg";
 export { default as validate_feature_img } from "./validate.png";
 export { default as w_logo } from "./w.svg";
 
+export { default as airwallex } from "./airwallex.svg";
+export { default as asana } from "./asant.svg";
 export { default as asets2 } from "./assets2.png";
+export { default as fresh_work } from "./fresh work.svg";
 export { default as g6 } from "./g10.png";
+export { default as github } from "./github.svg";
+export { default as out_race } from "./outrace.svg";
+

@@ -13,7 +13,7 @@ const Header = () => {
   const navLinks = [
     {
       name: "Home",
-      path: "/",
+      path: "home",
     },
     {
       name: "Pricing",
@@ -45,7 +45,9 @@ const Header = () => {
   }, []);
   return (
     <div
-      className={`fixed top-0 w-full block py-6  z-50 transition-colors duration-300 `}
+      className={`fixed ${
+        isScrolled && " bg-skin-bg"
+      } top-0 w-full block py-6  z-[999] transition-colors duration-300 `}
     >
       <Container>
         <header className=" relative z-50  flex items-center justify-between">
