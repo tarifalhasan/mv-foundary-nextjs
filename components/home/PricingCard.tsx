@@ -1,3 +1,4 @@
+import { motion as m } from "framer-motion";
 import React from "react";
 import { BsCheckLg } from "react-icons/bs";
 interface CardProps {
@@ -6,6 +7,7 @@ interface CardProps {
   list: Array<string>;
   subTitle: string;
   price: string;
+  variants: any;
 }
 export const PrimaryPricingCard: React.FC<CardProps> = ({
   variant,
@@ -13,14 +15,18 @@ export const PrimaryPricingCard: React.FC<CardProps> = ({
   list,
   subTitle,
   price,
+  variants,
+  ...restProps
 }) => {
   return (
-    <div
+    <m.div
+      variants={variants}
       className={`shadow-pricing_card overflow-hidden  p-0 m-0  rounded-[20px] ${
         variant === "primary"
           ? "bg-skin-pricging-card-primary"
           : "bg-skin-pricging-card-secondary"
       }`}
+      {...restProps}
     >
       <div
         className={` py-5 space-y-5 px-5 ${
@@ -71,6 +77,6 @@ export const PrimaryPricingCard: React.FC<CardProps> = ({
           )}
         </button>
       </div>
-    </div>
+    </m.div>
   );
 };

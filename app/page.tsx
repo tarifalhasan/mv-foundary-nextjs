@@ -10,9 +10,16 @@ import News from "@/components/home/news";
 import OurPartners from "@/components/home/our-partners/OurPartners";
 import StartUp from "@/components/home/start-up";
 import Team from "@/components/home/team";
+import AOS from "aos";
 import Image from "next/image";
+import { useEffect } from "react";
 
 export default function Home() {
+  useEffect(() => {
+    AOS.init({
+      duration: 2000,
+    });
+  }, []);
   return (
     <div className=" relative overflow-hidden">
       <Header />

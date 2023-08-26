@@ -1,12 +1,13 @@
 import { frame1 } from "@/assets/images";
 import Container from "@/components/common/Container";
+import { AnimationContainer } from "@/utils/animation";
+import { motion as m } from "framer-motion";
 import Image from "next/image";
 import Technology from "../technologys";
 import StratUpCard from "./StratUpCard";
-
 export default function StartUp() {
   return (
-    <section
+    <m.section
       id="startups"
       className=" relative  overflow-hidden py-16 lg:py-24"
     >
@@ -18,14 +19,21 @@ export default function StartUp() {
               Our awesome startup customers we&apos;re working with!
             </p>
           </div>
-          <div className=" grid sm:grid-cols-2 gap-6 lg:grid-cols-3">
+          <m.div
+            variants={AnimationContainer}
+            initial="hidden"
+            exit="exit"
+            whileInView="show"
+            viewport={{ once: true }}
+            className=" grid sm:grid-cols-2 gap-6 lg:grid-cols-3"
+          >
             <StratUpCard />
             <StratUpCard />
             <StratUpCard />
             <StratUpCard />
             <StratUpCard />
             <StratUpCard />
-          </div>
+          </m.div>
           <Technology />
         </div>
       </Container>
@@ -34,6 +42,6 @@ export default function StartUp() {
       <div className="absolute z-40  top-[10%] hidden lg:block   right-0  ">
         <Image src={frame1} alt="frame" />
       </div>
-    </section>
+    </m.section>
   );
 }

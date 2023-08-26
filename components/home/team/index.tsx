@@ -1,12 +1,15 @@
+"use client";
 import { team_member1, team_member2, team_member3 } from "@/assets/images";
 import Container from "@/components/common/Container";
 import Image from "next/image";
+import { useRouter } from "next/navigation";
 
 const Team = () => {
+  const router = useRouter();
   return (
-    <section className=" bg-skin-secondary py-16 lg:py-24">
+    <section className="  bg-skin-secondary py-16 lg:py-24">
       <Container>
-        <div className="space-y-6 lg:space-y-12">
+        <div className="relative z-50 space-y-6 lg:space-y-12">
           <div className="space-y-1">
             <h2 className="title">Our Team Members</h2>
             <p className="sub-title">
@@ -38,7 +41,12 @@ const Team = () => {
             </div>
           </div>
           <div className=" flex justify-center">
-            <button className="btn secondary-btn">Let’s chat with us</button>
+            <button
+              onClick={() => router.push("#contact")}
+              className="btn secondary-btn"
+            >
+              Let’s chat with us
+            </button>
           </div>
         </div>
       </Container>

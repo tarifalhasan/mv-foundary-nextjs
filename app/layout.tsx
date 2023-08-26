@@ -1,5 +1,7 @@
 import type { Metadata } from "next";
 import { Montserrat, Poppins } from "next/font/google";
+
+import "aos/dist/aos.css";
 import "./globals.css";
 import "./style.css";
 const montesrrat = Montserrat({

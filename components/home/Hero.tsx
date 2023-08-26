@@ -6,15 +6,15 @@ const Hero = () => {
   return (
     <section id="home" className="relative  overflow-hidden    ">
       <Container className="text-center pt-20 sm:pt-28 lg:pt-40 pb-20 2xl:pb-28 ">
-        <h1 className="hero_title">
+        <h1 data-aos="zoom-out-right" className="hero_title">
           Validate.Launch.<span className="grow">Grow</span>
         </h1>
-        <p className="hero_des">
+        <p data-aos="zoom-out-left" className="hero_des">
           Looking to turn your startup idea into a success story? We&apos;ve got
           you covered! Our services include idea validation, MVP development,
           and product growth. Let us help you every step of the way!
         </p>
-        <button className="btn secondary-btn mt-10">
+        <button data-aos="fade-up" className="btn secondary-btn mt-10">
           Start a project with us
         </button>
       </Container>

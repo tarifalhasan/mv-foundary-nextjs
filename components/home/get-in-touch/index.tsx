@@ -4,7 +4,7 @@ import Location from "./Location";
 
 const Contact = () => {
   return (
-    <section className=" pb-14 ">
+    <section id="contact" className=" pb-14 ">
       <Container className="bg-skin-secondary lg:grid-cols-2 gap-4 grid">
         <Location />
         <Form />

@@ -1,10 +1,14 @@
 import { ArrowRight } from "@/assets/icons/Svg";
 import { uber } from "@/assets/images";
+import { AnimatedItems } from "@/utils/animation";
+import { motion as m } from "framer-motion";
 import Image from "next/image";
-
 const StratUpCard = () => {
   return (
-    <div className=" cursor-pointer bg-skin-start-up-card   group  hover:bg-skin-start-up-card-hover border-[1px] border-[#333247]  p-5 space-y-5 rounded-radius-20">
+    <m.div
+      variants={AnimatedItems}
+      className=" cursor-pointer bg-skin-start-up-card   group  hover:bg-skin-start-up-card-hover border-[1px] border-[#333247]  p-5 space-y-5 rounded-radius-20"
+    >
       <div className="inline-flex items-center gap-3">
         <div>
           <Image
@@ -42,7 +46,7 @@ const StratUpCard = () => {
           <ArrowRight />
         </span>
       </button>
-    </div>
+    </m.div>
   );
 };
 

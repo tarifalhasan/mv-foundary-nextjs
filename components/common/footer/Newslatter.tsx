@@ -1,6 +1,9 @@
 const Newslatter = () => {
   return (
-    <div className="overflow-hidden w-full px-3 max-w-full sm:max-w-[45%]  lg:max-w-[570px] rounded-lg bg-white flex items-center justify-between  py-2">
+    <div
+      data-aos="zoom-out-left"
+      className="overflow-hidden w-full px-3 max-w-full sm:max-w-[45%]  lg:max-w-[570px] rounded-lg bg-white flex items-center justify-between  py-2"
+    >
       <div className=" basis-[70%]">
         <input
           type="text"

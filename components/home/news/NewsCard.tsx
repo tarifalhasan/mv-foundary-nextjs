@@ -1,10 +1,12 @@
 import { ArrowRight } from "@/assets/icons/Svg";
 import { news1 } from "@/assets/images";
+import { AnimatedItems } from "@/utils/animation";
+import { motion as m } from "framer-motion";
 import Image from "next/image";
 import { AiOutlineClockCircle } from "react-icons/ai";
 const NewsCard = () => {
   return (
-    <div className="news_card p-5 space-y-4">
+    <m.div variants={AnimatedItems} className="news_card p-5 space-y-4">
       <div className=" w-full">
         <Image
           src={news1}
@@ -34,7 +36,7 @@ const NewsCard = () => {
         </span>
         <ArrowRight />
       </button>
-    </div>
+    </m.div>
   );
 };
 

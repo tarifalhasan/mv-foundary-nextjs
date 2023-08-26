@@ -2,7 +2,7 @@ import dynamic from "next/dynamic";
 
 const Form = () => {
   return (
-    <div className=" px-5 py-6 grid place-items-center">
+    <div data-aos="fade-left" className=" px-5 py-6 grid place-items-center">
       <form className="   w-full lg:w-[490px] space-y-5">
         <div>
           <h2 className=" text-left title">Get in touch</h2>
